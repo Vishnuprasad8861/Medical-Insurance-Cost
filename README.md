@@ -1,6 +1,6 @@
 # Medical-Insurance-Cost
 
-##Overview
+## Overview
 Hospital ABC is a leading healthcare provider aiming to optimize its resource allocation and improve patient care by understanding the factors influencing medical costs for its patients. To facilitate this goal, Hospital ABC has collected a comprehensive dataset containing various attributes related to patients' demographics, lifestyle, health status, and medical expenses.
 
 This repository contains the dataset and code for analyzing the dataset to identify factors influencing medical costs.
@@ -22,3 +22,26 @@ We aim to perform the following analyses on the dataset:
 Descriptive Statistics: Understanding the basic statistics of the dataset.
 Exploratory Data Analysis (EDA): Exploring the relationships between different attributes and medical expenses.
 Predictive Modeling: Building predictive models to estimate medical expenses based on patient attributes.
+
+├── data
+│   ├── raw_data.csv          # Raw dataset as collected from the hospital
+│   ├── processed_data.csv    # Processed dataset for analysis
+├── notebooks
+│   ├── data_preprocessing.ipynb  # Jupyter notebook for data cleaning and preprocessing
+│   ├── exploratory_analysis.ipynb # Jupyter notebook for exploratory data analysis
+│   ├── model_building.ipynb      # Jupyter notebook for model building and evaluation
+├── src
+│   ├── preprocess.py          # Script for data preprocessing
+│   ├── analysis.py            # Script for data analysis functions
+│   ├── model.py               # Script for model building and evaluation
+├── README.md                  # Project overview and instructions
+├── requirements.txt           # List of dependencies
+└── LICENSE                    # License for the project
+
+## Summary of Results
+RandomForestRegressor outperformed other models with the lowest MSE (3.3230) and MAE (1.1732), and the highest R² (0.9897). This indicates that the RandomForestRegressor has the highest predictive accuracy and reliability among the evaluated models.
+Support Vector Regressor showed the highest MSE (8.8477) and the highest MAE (1.6147), indicating it had the least accuracy in this specific regression task.
+Decision Tree Regression and MLP Regressor provided a balance between performance and computational efficiency, with Decision Tree Regression having a relatively low MSE (5.5828) and a strong R² (0.9827).
+Linear Regression performed well with an R² of 0.9771, which suggests it explained a large portion of the variance in the data despite having higher MSE and MAE compared to some other models.
+## Conclusion
+The RandomForestRegressor emerged as the best-performing model based on the evaluated metrics, making it a suitable choice for this regression task. Future work could include hyperparameter tuning, cross-validation, and testing on different datasets to further validate these findings.
