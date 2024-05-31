@@ -23,21 +23,6 @@ Descriptive Statistics: Understanding the basic statistics of the dataset.
 Exploratory Data Analysis (EDA): Exploring the relationships between different attributes and medical expenses.
 Predictive Modeling: Building predictive models to estimate medical expenses based on patient attributes.
 
-├── data
-│   ├── raw_data.csv          # Raw dataset as collected from the hospital
-│   ├── processed_data.csv    # Processed dataset for analysis
-├── notebooks
-│   ├── data_preprocessing.ipynb  # Jupyter notebook for data cleaning and preprocessing
-│   ├── exploratory_analysis.ipynb # Jupyter notebook for exploratory data analysis
-│   ├── model_building.ipynb      # Jupyter notebook for model building and evaluation
-├── src
-│   ├── preprocess.py          # Script for data preprocessing
-│   ├── analysis.py            # Script for data analysis functions
-│   ├── model.py               # Script for model building and evaluation
-├── README.md                  # Project overview and instructions
-├── requirements.txt           # List of dependencies
-└── LICENSE                    # License for the project
-
 ## Summary of Results
 RandomForestRegressor outperformed other models with the lowest MSE (3.3230) and MAE (1.1732), and the highest R² (0.9897). This indicates that the RandomForestRegressor has the highest predictive accuracy and reliability among the evaluated models.
 Support Vector Regressor showed the highest MSE (8.8477) and the highest MAE (1.6147), indicating it had the least accuracy in this specific regression task.
